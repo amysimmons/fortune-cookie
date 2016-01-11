@@ -7,19 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<section class="header">
-	<%= link_to "Home", root_path %>
-</section>
-
-<div class="container">
-	<%= yield %>
-</div>
-
-<section class="footer">
-
-</section>
-
-
+	<header>
+		<%= link_to "Home", root_path %>
+	</header>
+	<div class="content-container">
+		<%= yield %>
+	</div>
+	<footer>
+		<%= link_to "About", about_path %>
+	</footer>
 </body>
 </html>
