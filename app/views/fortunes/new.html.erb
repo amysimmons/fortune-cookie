@@ -1,0 +1,35 @@
+<%= form_for @fortune do |f| %>
+	<div>
+		<div><%= f.label :description %></div>
+		<div><%= f.text_field :description, :required => true %></div>
+	</div>
+
+	</div>	
+		<div><%= f.label :name %></div>
+		<div><%= f.text_field :name %></div>
+	</div>
+
+	<div>
+	    <div><%= f.label :age %></div>
+	    <div><%= f.number_field :age %></div>
+   	</div>
+
+   	<div>
+	   	<div><%= f.label :city %></div>
+	    </div><%= f.text_field :city %></div>
+	</div>
+
+	<div>
+	    <div><%= f.label :country %></div>
+	    <div><%= f.text_field :country %></div>
+	</div>
+
+	<div>
+	   <div><%= f.label :url %></div>
+	   <div><%= f.url_field :url %></div>
+   	</div>
+
+   	<div>
+    	<%= f.submit class: 'btn' %>
+	</div>
+<% end %>

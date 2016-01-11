@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fortune Cookie</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<section class="header">
+	<%= link_to "Home", root_path %>
+</section>
+
+<div class="container">
+	<%= yield %>
+</div>
+
+<section class="footer">
+
+</section>
+
+
+</body>
+</html>
