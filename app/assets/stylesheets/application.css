@@ -42,6 +42,7 @@ header {
     left: 0;
     padding: 35px;
     font-weight: 300;
+    box-sizing: border-box;
 }
 
 .links a {
@@ -122,6 +123,10 @@ input, textarea {
     display: inline-block;
     text-transform: uppercase;
     width: 300px;
+}
+
+.fortune-cookie img {
+    width: 50%;
 }
 
 .btn {
