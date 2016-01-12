@@ -1,4 +1,5 @@
 <div class="fortune">
-	<p><%=@fortune.description%></p>
-	<p>Written by <%=@fortune.name%>, age <%=@fortune.age%>, in <%=@fortune.city%>, <%=@fortune.country%>, on <%=@fortune.created_at.strftime('%d %B %Y')%>.</p>
+	<p class="fortune-description"><%=@fortune.description%></p>
+	<p class="fortune-byline">By <%=@fortune.name%> in <%=@fortune.city%></p>
+	<p class="fortune-date"><%=@fortune.created_at.strftime('%d %B %Y')%></p>
 </div>
