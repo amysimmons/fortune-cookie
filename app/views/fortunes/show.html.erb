@@ -2,4 +2,5 @@
 	<p class="fortune-description"><%=@fortune.description%></p>
 	<p class="fortune-byline">By <%=@fortune.name%> in <%=@fortune.city%></p>
 	<p class="fortune-date"><%=@fortune.created_at.strftime('%d %B %Y')%></p>
+	<div><%= link_to "Write a fortune", new_fortune_path, :class => "main-btn" %></div>
 </div>
