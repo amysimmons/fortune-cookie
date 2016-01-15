@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root :to => 'fortunes#home'
-  resources :fortunes, :only => [:create, :new, :show]
+  resources :fortunes, :only => [:create, :new, :show, :index]
   get '/about' => 'pages#about'
 end

@@ -3,6 +3,10 @@ class FortunesController < ApplicationController
 	  @fortune = Fortune.offset(rand(Fortune.count)).first
   end
 
+  def index
+    @fortunes = Fortune.all
+  end
+
   def create
   	fortune = Fortune.create fortune_params
     redirect_to root_path

@@ -1,6 +1,9 @@
 <div class="fortune">
 	<p class="fortune-description"><%=@fortune.description%></p>
-	<p class="fortune-byline">By <%=@fortune.name%> in <%=@fortune.city%></p>
-	<p class="fortune-date"><%=@fortune.created_at.strftime('%d %B %Y')%></p>
+<% if @fortune.twitter_handle %>
+	<a href=<%=@fortune.twitter_handle%>><p class="fortune-byline">Written by <%=@fortune.name%> in <%=@fortune.city%> on <%=@fortune.created_at.strftime('%B %d, %Y')%></p></a>
+<% else %>
+	<p class="fortune-byline">Written by <%=@fortune.name%> in <%=@fortune.city%> on <%=@fortune.created_at.strftime('%B %d, %Y')%></p>
+<% end %>
 	<div><%= link_to "Write a fortune", new_fortune_path, :class => "main-btn" %></div>
 </div>

@@ -47,6 +47,9 @@ header {
 
 .links a {
     padding-right: 2em;
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: lowercase;
 }
 
 footer {
@@ -129,6 +132,15 @@ input, textarea {
     width: 50%;
 }
 
+.fortune-cookie-small  {
+    width: 10%;
+    display: inline-block;
+}
+
+.fortune-cookie-small img {
+    width: 100%;
+}
+
 .btn {
     background-color: rgb(178, 119, 20);
     color: #fff;
@@ -147,12 +159,6 @@ input, textarea {
 .fortune-byline {
 
 }
-
-.fotune-date {
-
-}
-
-
 
 
 
