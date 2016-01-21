@@ -103,6 +103,9 @@ form {
 
 .form-label {
     text-align: left;
+    color: rgb(213, 213, 214);
+    font-weight: 400;
+    font-size: 0.8em;
 }
 
 .form-description textarea {
@@ -111,11 +114,15 @@ form {
 
 input, textarea {
 	background-color: #FFF;
-    border: 1px solid #ccc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
     padding: 8px 8px;
     font-size: 18px;
     margin: 12px 10px 10px 0;
     width: 100%;
+
 }
 
 .main-btn {
