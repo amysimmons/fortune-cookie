@@ -1,6 +1,7 @@
 class FortunesController < ApplicationController
   def home
 	  @fortune = Fortune.offset(rand(Fortune.count)).first
+    @cookie_count = Fortune.count
   end
 
   def index

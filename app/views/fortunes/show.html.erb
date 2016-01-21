@@ -6,4 +6,5 @@
 	<p class="fortune-byline">Written by <%=@fortune.name%> in <%=@fortune.city%> on <%=@fortune.created_at.strftime('%B %d, %Y')%></p>
 <% end %>
 	<div><%= link_to "Write a fortune", new_fortune_path, :class => "main-btn" %></div>
+	<div><%= link_to "Share your fortune", "www.twitter.com", :class => "twitter-btn" %></div>
 </div>
