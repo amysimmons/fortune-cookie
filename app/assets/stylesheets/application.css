@@ -108,21 +108,28 @@ form {
     font-size: 0.8em;
 }
 
-.form-description textarea {
-    height: 200px;
+.small-title {
+    color: rgb(213, 213, 214);
+    font-weight: 400;
+    font-size: 0.8em;
 }
 
-input, textarea {
+input {
 	background-color: #FFF;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgb(64, 64, 64);
     padding: 8px 8px;
     font-size: 18px;
     margin: 12px 10px 10px 0;
     width: 100%;
+    font-weight: 300;
+    font-family:  'Roboto', sans-serif;
+}
 
+input:focus {
+    outline: none;
 }
 
 .main-btn {
@@ -168,14 +175,11 @@ input, textarea {
     width: 100%;
 }
 
-
 .fortune-description {
-
+    font-size: 2em;
+    font-weight: 300;
 }
 
-.fortune-byline {
-
-}
 
 
 
