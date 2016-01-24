@@ -16,7 +16,7 @@ Fortune.create(
 			:age => 28, 
 			:city => 'Sydney', 
 			:country => 'Australia', 
-			:twitter_handle => "https://twitter.com/amesimmons"
+			:twitter_handle => "amesimmons"
 		},
 		{
 			:description => 'A chance meeting opens new doors to success and friendship.', 
@@ -24,7 +24,7 @@ Fortune.create(
 			:age => 29, 
 			:city => 'Sydney', 
 			:country => 'Australia', 
-			:twitter_handle => "https://twitter.com/amesimmons"
+			:twitter_handle => "amesimmons"
 		},
 		{
 			:description => 'The love of your life is stepping into your planet this summer.', 
@@ -32,7 +32,7 @@ Fortune.create(
 			:age => 31, 
 			:city => 'Sydney', 
 			:country => 'Australia', 
-			:twitter_handle => "https://twitter.com/amesimmons"	
+			:twitter_handle => "amesimmons"	
 		}
 	]
 )
