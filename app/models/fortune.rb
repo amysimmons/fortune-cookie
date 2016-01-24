@@ -15,4 +15,8 @@
 
 class Fortune < ActiveRecord::Base
 	validates :description, :presence => true 
+
+	def clean_twitter_handle
+		twitter_handle.split(//).slice(1, twitter_handle.length).join
+	end
 end
