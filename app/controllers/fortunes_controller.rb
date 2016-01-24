@@ -22,10 +22,12 @@ class FortunesController < ApplicationController
 
   def show
   	@fortune = Fortune.find params[:id]
+    @tweet = @fortune.tweet
   end
 
   private
   def fortune_params
     params.require(:fortune).permit(:description, :name, :age, :city, :country, :twitter_handle)
   end
+
 end
