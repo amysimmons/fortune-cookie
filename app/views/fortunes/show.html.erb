@@ -3,7 +3,7 @@
 
 	<p class="small-title">Submitted by</p>
 	<% if @fortune.twitter_handle %>
-		<a href=<%=@fortune.twitter_handle%>>
+		<a href="https://twitter.com/<%=@fortune.twitter_handle%>">
 			<p class="fortune-byline">
 				<%=@fortune.name%>, <%=@fortune.city%>
 			</p>
@@ -24,6 +24,6 @@
 
 		<% status = "xxx" %>
 
-		<%= link_to "Share your fortune", "http://twitter.com/home?status=#{status}", :class => "twitter-btn" %>
+		<%= link_to '<i class="fa fa-twitter"></i> Share your fortune'.html_safe, "http://twitter.com/home?status=#{status}", :class => "twitter-btn" %>
 	</div>
 </div>

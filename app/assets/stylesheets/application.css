@@ -12,17 +12,16 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
 
- /*
-
+/*
+colors:
 main text - rgb(64, 64, 64);
 lighter text - rgb(213, 213, 214);
 main button - rgb(153, 134, 117);
 twitter button rgb(0, 174, 239);
-
-
- */
+*/
 
 body {
 	height: 100%;
