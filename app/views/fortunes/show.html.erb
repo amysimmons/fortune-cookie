@@ -20,7 +20,7 @@
 	</p>
 
 	<div>
-		<%= link_to "Write a fortune", new_fortune_path, :class => "main-btn" %>
+		<%= link_to '<i class="fa fa-pencil"></i> Write a fortune'.html_safe, new_fortune_path, :class => "main-btn" %>
 		<%= link_to '<i class="fa fa-twitter"></i> Share your fortune'.html_safe, "http://twitter.com/home?status=#{@tweet}", :class => "twitter-btn" %>
 	</div>
 </div>

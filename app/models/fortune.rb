@@ -20,13 +20,30 @@ class Fortune < ActiveRecord::Base
 		twitter_handle.split(//).slice(1, twitter_handle.length).join
 	end
 
-	def tweet
-		signoff = " - my fortune via unlucky-monkey.herokuapp.com %23chinesenewyear %23yearofthemonkey"
-
-		if description.length > 60
-			"#{description.split(//).slice(0,60).join} #{signoff}"
+	def tweet_signoff
+		if twitter_handle
+			" - my fortune by @#{twitter_handle} via unlucky-monkey.herokuapp.com %23chinesenewyear %23yearofthemonkey"
 		else
-			"#{description} #{signoff}"
+			" - my fortune via unlucky-monkey.herokuapp.com %23chinesenewyear %23yearofthemonkey"
 		end
 	end
+
+	def tweet_chars_remaining
+		#-2 is for the quotation marks around the fortune
+		140 - tweet_signoff.length - 2
+	end
+
+	def tweet_fortune_description
+		if description.length < tweet_chars_remaining
+			description
+		else
+			#-3 is for the ...
+			description.split(//).slice(0, tweet_chars_remaining - 3).join.strip + "..."
+		end
+	end
+
+	def tweet
+		"%22#{tweet_fortune_description}%22#{tweet_signoff}"
+	end
+
 end
