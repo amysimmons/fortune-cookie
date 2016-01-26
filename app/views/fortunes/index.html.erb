@@ -1,3 +1,32 @@
-<% @fortunes.each do |f| %>
-	<div class="fortune-cookie-small"><%= link_to image_tag("http://i.imgur.com/n32m2lR.jpg?1"), fortune_path(f.id) %></div>
-<% end %>
+<div class="index-content">
+	<% @fortunes.each do |f| %>
+	<div class="index-fortune-container">
+		<div class="fortune-cookie-small"><%= link_to image_tag("http://i.imgur.com/n32m2lR.jpg?1"), fortune_path(f.id) %></div>
+
+	<p class="fortune-description"><%=f.description%></p>
+
+	<p class="small-title">Submitted by</p>
+	<% if f.twitter_handle %>
+		<a href="https://twitter.com/<%=f.twitter_handle%>">
+			<p class="fortune-byline">
+				<%=f.name%>, <%=f.city%>
+			</p>
+		</a>
+	<% else %>
+		<p class="fortune-byline">
+			<%=f.name%>, <%=f.city%>
+		</p>
+	<% end %>
+
+	<p class="small-title">Date</p>
+	<p class="fortune-date">
+		<%=f.created_at.strftime('%d %B %Y')%>
+	</p>
+</div>
+
+
+	<% end %>
+
+
+</div>
+

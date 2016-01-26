@@ -83,8 +83,6 @@ footer {
     margin: 0 auto;
     position: relative;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
 .cookies-link {
@@ -167,7 +165,7 @@ input:focus {
 }
 
 .fortune-cookie-small  {
-    width: 10%;
+    width: 50%;
     display: inline-block;
 }
 
@@ -180,6 +178,26 @@ input:focus {
     font-weight: 300;
 }
 
+.index-content{
+    text-align: left;
+}
+
+.show-content, .index-content, .new-content {
+    margin-top: 50px;
+}
+
+.index-fortune-container{
+    width: 24%;
+    display: inline-block;
+}
+
+/*tablet*/
+@media screen and (max-width: 1023px){  
+}
+
+/*mobile*/
+@media screen and (max-width: 767px){
+}
 
 
 
