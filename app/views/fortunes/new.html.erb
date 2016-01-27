@@ -2,15 +2,15 @@
 	<%= form_for @fortune do |f| %>
 		<div class="form-group">	
 			<div class="form-label"><%= f.label :name %></div>
-			<div><%= f.text_field :name, :placeholder => 'First Name'  %></div>
+			<div><%= f.text_field :name, :placeholder => 'Amy'  %></div>
 		</div>
 
 	   	<div class="form-group">
 		   	<div class="form-label"><%= f.label :city %></div>
-		    <div><%= f.text_field :city, :placeholder => 'Amy' %></div>
+		    <div><%= f.text_field :city, :placeholder => 'Sydney' %></div>
 		</div>
 		<div class="form-group">
-			<div class="form-label"><%= f.label :description, "Your fortune" %></div>
+			<div class="form-label"><%= f.label :description, "Write a fortune for someone else to open (be kind!)" %></div>
 			<div class="form-description"><%= f.text_field :description, :required => true, :placeholder => 'If winter comes, can spring be far behind?' %></div>
 		</div>
 		<div class="form-group">

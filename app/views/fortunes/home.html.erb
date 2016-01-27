@@ -1,6 +1,8 @@
 <div class="home-content">
-	<div class="fortune-cookie"><%= link_to image_tag("http://i.imgur.com/n32m2lR.jpg?1"), @fortune %></div>
-	<div class="cookies-link"><%= link_to "#{@cookie_count} cookies and counting", fortunes_path %></div>
+	<div class="fortune-cookie-main"><%= link_to image_tag("http://i.imgur.com/n32m2lR.jpg?1"), @fortune %>
+	</div>
+	<div class="open-fortune-prompt"><%=link_to "Open your fortune cookie", @fortune %></div>
+	<div class="all-cookies-link"><%= link_to "#{@cookie_count} cookies and counting", fortunes_path, :class => "small-title"%></div>
 </div>
 
 
