@@ -177,6 +177,7 @@ input:focus {
 .index-fortune-container{
     width: 24%;
     display: inline-block;
+    text-align: center;
 }
 
 /*tablet*/
