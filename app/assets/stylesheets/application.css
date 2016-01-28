@@ -63,20 +63,20 @@ nav {
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 .nav-li {
-  display: inline-block;
-  margin-left: 15px;
-  margin-right: 15px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .nav-link {
-  text-decoration: none;
-  margin-left: 5px;
+    text-decoration: none;
+    margin-left: 5px;
 }
 
 header a {
@@ -140,7 +140,6 @@ input {
     font-weight: 300;
     font-family:  'Roboto', sans-serif;
     padding-left: 0;
-
 }
 
 input:focus {
@@ -200,7 +199,7 @@ input:focus {
 }
 
 i.fa.fa-bars.hamburger {
-  display: none;
+    display: none;
 }
 
 /*tablet*/
@@ -209,7 +208,6 @@ i.fa.fa-bars.hamburger {
 
 /*mobile*/
 @media screen and (max-width: 767px){
-
     body {
         font-size: 16px;
     }
@@ -247,14 +245,13 @@ i.fa.fa-bars.hamburger {
     }
 
     /*hamburger menu*/
-
     nav {
         text-align: right;
     }
 
-      .nav-li {
+    .nav-li {
         display: block;
-      }
+    }
 
     i.fa.fa-bars.hamburger {
         display: block;
@@ -262,20 +259,19 @@ i.fa.fa-bars.hamburger {
         text-align: right
     }
 
-      nav ul {
+    nav ul {
         max-height: 0;
         padding: 0;
         overflow: hidden;
         -webkit-transition: max-height 0.8s;
         -moz-transition: max-height 0.8s;
         transition: max-height 0.8s;
-      }
+    }
 
-      nav ul.show-menu {
+    nav ul.show-menu {
         padding-bottom: 1.1em;
         max-height: 160px;
-      }
-
+    }
 }
 
 
