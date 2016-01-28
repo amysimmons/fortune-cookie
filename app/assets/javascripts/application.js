@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function(){
+	var showNavMenu = function(){
+	  $('nav ul').toggleClass('show-menu');
+	};
+
+	$('.hamburger').on('click', showNavMenu);
+});
+

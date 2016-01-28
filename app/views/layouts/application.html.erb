@@ -6,14 +6,24 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<header>
-		<div class="links">
-			<%= link_to "Home", root_path %>
-			<%= link_to "About", about_path %>
-  		</div>
-	</header>
+
+      <header>
+        <nav>
+          <i class="fa fa-bars hamburger"></i>
+          <ul>
+            <li class="nav-li">
+            	<%= link_to "Home", root_path, :class => "nav-link home-link" %>
+            </li>
+            <li class="nav-li">
+   					<%= link_to "About", about_path, :class => "nav-link about-link" %>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
 	<div class="content-container">
 		<%= yield %>
 	</div>

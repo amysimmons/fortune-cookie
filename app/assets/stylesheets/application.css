@@ -41,7 +41,6 @@ a {
 
 a:hover {
 	pointer: cursor;
-    font-weight: 400;
 }
 
 header {
@@ -52,20 +51,37 @@ header {
     right: 0;
     left: 0;
     padding: 35px;
+    z-index: 1000;
+    position: relative;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.nav-li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin-left: 5px;
 }
 
 header a {
     color: rgb(64, 64, 64);
  }
-
-.links {
-    text-align: left;
- }
-
-.links a {
-    padding-right: 2em;
-}
 
 .content-container {
 	width: 85%;
@@ -85,6 +101,7 @@ header a {
 
 .all-cookies-link {
     text-align: center;
+    margin-top: 1.2em;
  }
 
 form {
@@ -122,6 +139,8 @@ input {
     width: 100%;
     font-weight: 300;
     font-family:  'Roboto', sans-serif;
+    padding-left: 0;
+
 }
 
 input:focus {
@@ -174,10 +193,14 @@ input:focus {
     margin-top: 50px;
 }
 
-.index-fortune-container{
+.index-fortune-container {
     width: 24%;
     display: inline-block;
     text-align: center;
+}
+
+i.fa.fa-bars.hamburger {
+  display: none;
 }
 
 /*tablet*/
@@ -186,6 +209,73 @@ input:focus {
 
 /*mobile*/
 @media screen and (max-width: 767px){
+
+    body {
+        font-size: 16px;
+    }
+
+    .fortune-cookie-main img {
+        width: 100%;
+    }
+
+    .main-btn, .twitter-btn{
+        text-align: center;
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 2em;
+        font-size: 16px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input {
+        font-size: 16px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+
+    .index-fortune-container {
+        width: 32%;
+    }
+
+    .fortune-cookie-small {
+        width: 100%;
+    }
+
+    /*hamburger menu*/
+
+    nav {
+        text-align: right;
+    }
+
+      .nav-li {
+        display: block;
+      }
+
+    i.fa.fa-bars.hamburger {
+        display: block;
+        padding: 20px;
+        text-align: right
+    }
+
+      nav ul {
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.8s;
+        -moz-transition: max-height 0.8s;
+        transition: max-height 0.8s;
+      }
+
+      nav ul.show-menu {
+        padding-bottom: 1.1em;
+        max-height: 160px;
+      }
+
 }
 
 
