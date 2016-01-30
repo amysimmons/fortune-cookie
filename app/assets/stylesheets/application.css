@@ -175,7 +175,7 @@ input:focus {
 }
 
 .fortune-cookie-small  {
-    width: 50%;
+    width: 80%;
     display: inline-block;
 }
 
@@ -188,12 +188,19 @@ input:focus {
     font-weight: 300;
 }
 
-.index-content{
-    text-align: left;
+.new-content {
+    margin-top: 100px;
 }
 
-.show-content, .index-content, .new-content, .about-content {
-    margin-top: 100px;
+.index-content {
+    width: 50%;
+    text-align: left;
+    margin: 100px auto 100px auto;
+}
+
+.show-content {
+    width: 50%;
+    margin: 100px auto 0 auto;
 }
 
 .about-content {
@@ -220,7 +227,7 @@ input:focus {
 }
 
 .index-fortune-container {
-    width: 24%;
+    width: 32%;
     display: inline-block;
     text-align: center;
 }
@@ -275,11 +282,17 @@ i.fa.fa-bars.hamburger {
         width: 100%;
     }
 
+    .index-content {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
     .about-content {
         width: 100%;
     }
 
     .show-content {
+        width: 100%;
         margin-bottom: 3em;
     }
 
