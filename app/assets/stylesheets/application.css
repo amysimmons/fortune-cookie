@@ -192,6 +192,20 @@ input:focus {
     margin-top: 50px;
 }
 
+.about-content {
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.about-attribution {
+    margin: 15% 0;
+}
+
+.about-attribution .fa:hover {
+    color: rgb(153, 134, 117);
+}
+
 .index-fortune-container {
     width: 24%;
     display: inline-block;
