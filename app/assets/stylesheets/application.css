@@ -158,6 +158,10 @@ input:focus {
     border-radius: 0.2em;
 }
 
+form .main-btn {
+    -webkit-appearance: none;
+}
+
 .twitter-btn {
     background-color: rgb(0, 174, 239);
     color: #fff;
