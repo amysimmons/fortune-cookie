@@ -29,8 +29,9 @@ class Fortune < ActiveRecord::Base
 	end
 
 	def tweet_chars_remaining
+		#149 because the url gets shortened so there are more chars available
 		#-2 is for the quotation marks around the fortune
-		140 - tweet_signoff.length - 2
+		149 - tweet_signoff.length - 2
 	end
 
 	def tweet_fortune_description

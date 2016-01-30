@@ -3,11 +3,7 @@
 
 	<p class="small-title">Submitted by</p>
 	<% if @fortune.twitter_handle %>
-		<a href="https://twitter.com/<%=@fortune.twitter_handle%>">
-			<p class="fortune-byline">
-				<%=@fortune.name%>, <%=@fortune.city%>
-			</p>
-		</a>
+		<%= link_to "#{@fortune.name}, #{@fortune.city}", "https://twitter.com/#{@fortune.twitter_handle}", :class => "fortune-byline-link" %>
 	<% else %>
 		<p class="fortune-byline">
 			<%=@fortune.name%>, <%=@fortune.city%>
