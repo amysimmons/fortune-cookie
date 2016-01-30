@@ -258,6 +258,10 @@ i.fa.fa-bars.hamburger {
         width: 100%;
     }
 
+    .about-content {
+        width: 100%;
+    }
+
     /*hamburger menu*/
     nav {
         text-align: right;
