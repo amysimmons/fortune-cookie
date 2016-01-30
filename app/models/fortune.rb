@@ -16,6 +16,18 @@
 class Fortune < ActiveRecord::Base
 	validates :description, :presence => true 
 
+	def submitted_by
+		if name.empty? && city.empty?
+			"Anonymous"
+		elsif city.empty?
+			"#{name}"
+		elsif name.empty?
+			"Someone in #{city}"
+		else
+			"#{name}, #{city}"
+		end
+	end
+
 	def clean_twitter_handle
 		twitter_handle.split(//).slice(1, twitter_handle.length).join
 	end
