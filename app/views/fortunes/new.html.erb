@@ -1,20 +1,20 @@
 <div class="new-content">
 	<%= form_for @fortune do |f| %>
-		<div class="form-group">	
-			<div class="form-label"><%= f.label :name %></div>
-			<div><%= f.text_field :name, :placeholder => 'Amy'  %></div>
-		</div>
-
-	   	<div class="form-group">
-		   	<div class="form-label"><%= f.label :city %></div>
-		    <div><%= f.text_field :city, :placeholder => 'Sydney' %></div>
-		</div>
 		<div class="form-group">
 			<div class="form-label"><%= f.label :description, "Write a fortune for someone else to open (be kind!)" %></div>
 			<div class="form-description"><%= f.text_field :description, :required => true, :placeholder => 'If winter comes, can spring be far behind?' %></div>
 		</div>
+		<div class="form-group">	
+			<div class="form-label"><%= f.label :name, "Your name" %></div>
+			<div><%= f.text_field :name, :placeholder => 'Amy'  %></div>
+		</div>
+
+	   	<div class="form-group">
+		   	<div class="form-label"><%= f.label :city, "Your city" %></div>
+		    <div><%= f.text_field :city, :placeholder => 'Sydney' %></div>
+		</div>
 		<div class="form-group">
-		   <div class="form-label"><%= f.label :twitter_handle %></div>
+		   <div class="form-label"><%= f.label :twitter_handle, "Your Twitter handle" %></div>
 		   <div><%= f.text_field :twitter_handle, :placeholder => 'amesimmons' %></div>
 	   	</div>
 	   	<div class="form-group">
