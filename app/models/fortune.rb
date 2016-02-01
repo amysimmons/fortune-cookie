@@ -34,9 +34,9 @@ class Fortune < ActiveRecord::Base
 
 	def tweet_signoff
 		if twitter_handle
-			" - my fortune by @#{twitter_handle} via unlucky-monkey.herokuapp.com %23chinesenewyear %23yearofthemonkey"
+			" - my fortune by @#{twitter_handle} via unlucky-monkey.herokuapp.com %23chinesenewyear %23unluckymonkey"
 		else
-			" - my fortune via unlucky-monkey.herokuapp.com %23chinesenewyear %23yearofthemonkey"
+			" - my fortune via unlucky-monkey.herokuapp.com %23chinesenewyear %23unluckymonkey"
 		end
 	end
 
