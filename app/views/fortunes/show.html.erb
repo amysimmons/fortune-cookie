@@ -1,8 +1,7 @@
 <div class="show-content">
 	<p class="fortune-description"><%=@fortune.description%></p>
-
 	<p class="small-title">Submitted by</p>
-	<% if !@fortune.twitter_handle.empty? %>
+	<% if @fortune.twitter_handle && !@fortune.twitter_handle.empty?  %>
 		<%= link_to "#{@fortune.submitted_by} (@#{@fortune.twitter_handle})", "https://twitter.com/#{@fortune.twitter_handle}", :class => "fortune-byline-link" %>
 	<% else %>
 		<p class="fortune-byline">
@@ -14,7 +13,6 @@
 	<p class="fortune-date">
 		<%=@fortune.created_at.strftime('%d %B %Y')%>
 	</p>
-
 	<div>
 		<%= link_to '<i class="fa fa-pencil"></i> Write a fortune'.html_safe, new_fortune_path, :class => "main-btn" %>
 		<%= link_to '<i class="fa fa-twitter"></i> Share your fortune'.html_safe, "http://twitter.com/home?status=#{@tweet}", :class => "twitter-btn" %>

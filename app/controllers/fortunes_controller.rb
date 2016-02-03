@@ -2,8 +2,13 @@ class FortunesController < ApplicationController
   before_filter :allow_iframe_requests
 
   def home
-	  @fortune = Fortune.offset(rand(Fortune.count)).first
+    @fortune = Fortune.offset(rand(Fortune.count)).first
     @cookie_count = Fortune.count
+  end
+
+  def random
+    @fortune = Fortune.offset(rand(Fortune.count)).first
+    redirect_to action: "show", id: @fortune.id
   end
 
   def index
@@ -25,9 +30,6 @@ class FortunesController < ApplicationController
   def show
   	@fortune = Fortune.find params[:id]
     @tweet = @fortune.tweet
-  end
-
-  def embed
   end
 
   private
