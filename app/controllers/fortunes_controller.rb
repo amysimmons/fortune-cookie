@@ -30,4 +30,7 @@ class FortunesController < ApplicationController
     params.require(:fortune).permit(:description, :name, :age, :city, :country, :twitter_handle)
   end
 
+  def allow_iframe
+    response.headers.except! 'X-Frame-Options'
+  end
 end
